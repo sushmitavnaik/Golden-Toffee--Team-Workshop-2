@@ -1,0 +1,5 @@
+MASY1-GC 1800 Chart Improvement Practice Scaffold
+Version: 1.0
+Status: FROZEN PRACTICE BASELINE
+Term: Fall 2026
+

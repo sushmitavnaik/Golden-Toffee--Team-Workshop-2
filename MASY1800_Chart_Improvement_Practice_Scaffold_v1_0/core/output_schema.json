@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MASY1800 Chart Improvement Specialist Output",
+  "type": "object",
+  "required": [
+    "agent",
+    "business_question",
+    "business_answer_shown",
+    "baseline_chart_assessment",
+    "data_fidelity_checks",
+    "principles_applied",
+    "improved_chart",
+    "baseline_to_improved_comparison",
+    "remaining_limitations",
+    "abstention_or_more_information_needed"
+  ],
+  "properties": {
+    "agent": {
+      "type": "object",
+      "required": ["name", "specialty", "version"],
+      "properties": {
+        "name": {"type": "string"},
+        "specialty": {"type": "string"},
+        "version": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "business_question": {"type": "string"},
+    "business_answer_shown": {"type": "string"},
+    "baseline_chart_assessment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["issue", "why_it_matters", "related_principle", "priority"],
+        "properties": {
+          "issue": {"type": "string"},
+          "why_it_matters": {"type": "string"},
+          "related_principle": {"type": "string"},
+          "priority": {"type": "string", "enum": ["high", "medium", "low"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "data_fidelity_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check", "result", "notes"],
+        "properties": {
+          "check": {"type": "string"},
+          "result": {"type": "string", "enum": ["pass", "fail", "not_verified"]},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "principles_applied": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["principle", "change_made", "expected_communication_benefit"],
+        "properties": {
+          "principle": {"type": "string"},
+          "change_made": {"type": "string"},
+          "expected_communication_benefit": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "improved_chart": {
+      "type": "object",
+      "required": ["artifact_created", "filename", "chart_type", "title", "accessibility_notes"],
+      "properties": {
+        "artifact_created": {"type": "boolean"},
+        "filename": {"type": "string"},
+        "chart_type": {"type": "string"},
+        "title": {"type": "string"},
+        "accessibility_notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "baseline_to_improved_comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "baseline", "improved"],
+        "properties": {
+          "dimension": {"type": "string"},
+          "baseline": {"type": "string"},
+          "improved": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "remaining_limitations": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "abstention_or_more_information_needed": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}
+

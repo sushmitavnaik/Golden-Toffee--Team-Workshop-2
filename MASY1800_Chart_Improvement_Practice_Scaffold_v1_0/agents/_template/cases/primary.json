@@ -1,0 +1,16 @@
+{
+  "business_question_file": "course_materials/business_question.txt",
+  "source_data_file": "course_materials/source_data.xlsx",
+  "baseline_chart_file": "agents/chart_improvement_agent/assets/baseline_chart.png",
+  "visualization_principles_file": "course_materials/Data_Visualization_for_Business_Decisions_Principles.pdf",
+  "application_case_study_file": "course_materials/From_Pixels_to_Insights_Case_Study.pdf",
+  "intended_audience": "REPLACE WITH THE INTENDED MANAGEMENT AUDIENCE",
+  "decision_context": "REPLACE WITH HOW THE CHART WILL SUPPORT A BUSINESS DECISION OR DISCUSSION",
+  "requested_output_filename": "improved_chart.png",
+  "delivery_constraints": [
+    "PNG output",
+    "Preserve accurate values and relationships from the source data",
+    "Make the business answer understandable without relying on a separate legend when feasible"
+  ],
+  "additional_context": "The baseline chart was created outside this agent using ordinary ChatGPT and must remain unchanged as comparison evidence."
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MASY1800 Chart Improvement Practice Intake",
+  "type": "object",
+  "required": [
+    "business_question_file",
+    "source_data_file",
+    "baseline_chart_file",
+    "visualization_principles_file",
+    "application_case_study_file",
+    "intended_audience",
+    "decision_context",
+    "requested_output_filename",
+    "delivery_constraints"
+  ],
+  "properties": {
+    "business_question_file": {"type": "string"},
+    "source_data_file": {"type": "string"},
+    "baseline_chart_file": {"type": "string"},
+    "visualization_principles_file": {"type": "string"},
+    "application_case_study_file": {"type": "string"},
+    "intended_audience": {"type": "string"},
+    "decision_context": {"type": "string"},
+    "requested_output_filename": {"type": "string"},
+    "delivery_constraints": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "additional_context": {"type": "string"}
+  },
+  "additionalProperties": false
+}
