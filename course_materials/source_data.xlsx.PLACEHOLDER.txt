@@ -1,2 +1,0 @@
-Replace this placeholder with the instructor-supplied spreadsheet named source_data.xlsx before distributing the exercise.
-

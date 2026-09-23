@@ -1,0 +1,15 @@
+{
+  "business_question_file": "REPLACE WITH SECOND BUSINESS-QUESTION FILE",
+  "source_data_file": "REPLACE WITH SECOND SOURCE-DATA FILE",
+  "baseline_chart_file": "REPLACE WITH SECOND BASELINE-CHART FILE",
+  "visualization_principles_file": "course_materials/Data_Visualization_for_Business_Decisions_Principles.pdf",
+  "application_case_study_file": "course_materials/From_Pixels_to_Insights_Case_Study.pdf",
+  "intended_audience": "REPLACE",
+  "decision_context": "REPLACE",
+  "requested_output_filename": "transfer_test_improved_chart.png",
+  "delivery_constraints": [
+    "PNG output",
+    "Preserve accurate values and relationships from the source data"
+  ],
+  "additional_context": "Optional transfer test used only if assigned or time permits."
+}
